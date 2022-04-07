@@ -31,9 +31,6 @@ public class FilesPage {
     @FindBy (xpath = "//span[@class='innernametext']")
     public List<WebElement> filesNames;
 
-//    @FindBy (xpath = "//tr[@data-favorite='true']")
-//    public List<WebElement> favoriteFiles;
-
     @FindBy(xpath = "//a[@data-action='Favorite']//span[1]")
     public WebElement starFavoriteIcon;
 

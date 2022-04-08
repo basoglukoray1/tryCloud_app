@@ -15,7 +15,6 @@ Feature: As a user, I should be able to remove files from favorites and upload a
       | user37   | Userpass123 |
       | user67   | Userpass123 |
 
-
   Scenario Outline: verify users to upload a file from Files
     Given user enters "<username>" and "<password>" in the log in page
     When the user clicks the "Files" module

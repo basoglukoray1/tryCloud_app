@@ -24,8 +24,10 @@ public class TryCloudStep_Definitions {
     DashboardPage dashboardPage=new DashboardPage();
     FilesPage filesPage=new FilesPage();
 
-   int i = 0;
+    int i = 0;
+
     String filenameWithStar;
+    // cahnge
 
     @Given("user enters {string} and {string} in the log in page")
     public void user_enters_and_in_he_log_in_page(String username, String password) {
@@ -43,25 +45,15 @@ public class TryCloudStep_Definitions {
       filesPage.addIcon.click();
         BrowserUtils.sleep(3);
     }
-
-
-
     @And("users uploads {string} with the upload file option")
     public void usersUploadsWithTheUploadFileOption(String file) {
        String pathOfProject= System.getProperty("user.dir");
-
        // System.out.println(pathOfProject);
-
         String pathOfFile="/src/test/resources/files/"+file;
-
        // System.out.println(pathOfFile);
-
         String path=pathOfProject+pathOfFile;
-
       //  System.out.println(path);
-
         filesPage.uploadFile.sendKeys(path);
-
         BrowserUtils.sleep(5);
     }
 

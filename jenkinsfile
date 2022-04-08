@@ -1,6 +1,6 @@
 node {
     stage('Clone code') {
-        git 'https://github.com/basoglukoray1/tryCloud_app'
+        git 'https://github.com/basoglukoray1/tryCloud_app.git'
     }
         
     stage('Run tests'){

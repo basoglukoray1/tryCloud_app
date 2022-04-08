@@ -1,3 +1,4 @@
+@regression
 Feature: As a user, I should be able to remove files from favorites and upload a file directly
 
   @removeFav
